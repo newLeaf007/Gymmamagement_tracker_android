@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/light_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_background"
+        style="@style/Widget.Neumorph.CardView"
+        app:neumorph_shapeType="basin"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_directions_run_24"
+            app:neumorph_shapeType="pressed"
+            android:layout_gravity="right"
+            android:transitionName="memberImage"
+            android:id="@+id/imageMember"/>
+
+       <TableLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="20dp"
+
+           android:stretchColumns="1">
+
+           <TableRow>
+               <soup.neumorphism.NeumorphTextView
+                   style="@style/Widget.Neumorph.TextView"
+                   android:layout_column="1"
+                   android:layout_width="0dp"
+                   android:layout_weight=".30"
+                   android:layout_height="wrap_content"
+                   android:text="Name"
+                   android:textSize="25sp"
+                   android:fontFamily="sans-serif-light"
+                   android:textColor="@color/text"
+                   android:id="@+id/logoName"
+                   android:textStyle="bold"/>
+               <soup.neumorphism.NeumorphTextView
+                   style="@style/Widget.Neumorph.TextView"
+                   android:layout_height="wrap_content"
+                   android:layout_width="0dp"
+                   android:layout_weight=".60"
+                   android:text="NAME"
+                   android:textSize="25sp"
+                   android:fontFamily="sans-serif-light"
+
+                   android:textColor="@color/text"
+                   android:id="@+id/name"
+                   android:textStyle="bold"/>
+
+           </TableRow>
+
+           <TableRow>
+               <soup.neumorphism.NeumorphTextView
+                   style="@style/Widget.Neumorph.TextView"
+                   android:layout_column="1"
+                   android:layout_width="0dp"
+                   android:layout_weight=".30"
+                   android:layout_height="wrap_content"
+                   android:text="Phone"
+                   android:textSize="25sp"
+                   android:fontFamily="sans-serif-light"
+                   android:textColor="@color/text"
+                   android:textStyle="bold"/>
+               <soup.neumorphism.NeumorphTextView
+                   style="@style/Widget.Neumorph.TextView"
+                   android:layout_width="0dp"
+                   android:layout_weight=".60"
+                   android:layout_height="wrap_content"
+                   android:text="Phone"
+                   android:textSize="25sp"
+                   android:fontFamily="sans-serif-light"
+                   android:textColor="@color/text"
+                   android:id="@+id/phone"
+                   android:textStyle="bold"/>
+
+           </TableRow>
+           <TableRow>
+               <soup.neumorphism.NeumorphTextView
+                   style="@style/Widget.Neumorph.TextView"
+                   android:layout_column="1"
+                   android:layout_width="0dp"
+                   android:layout_weight=".30"
+                   android:layout_height="wrap_content"
+                   android:text="Address"
+                   android:textSize="25sp"
+                   android:fontFamily="sans-serif-light"
+                   android:textColor="@color/text"
+                   android:textStyle="bold"/>
+               <soup.neumorphism.NeumorphTextView
+                   style="@style/Widget.Neumorph.TextView"
+                   android:layout_width="0dp"
+                   android:layout_weight=".60"
+                   android:layout_height="wrap_content"
+                   android:text="Phoneytertytryrtyrtyryryry"
+                   android:textSize="25sp"
+                   android:fontFamily="sans-serif-light"
+                   android:textColor="@color/text"
+                   android:id="@+id/address"
+                   android:textStyle="bold"/>
+
+           </TableRow>
+           <TableRow>
+               <TextView
+                   android:layout_marginTop="10dp"
+                   android:layout_column="1"
+                   android:layout_width="0dp"
+                   android:layout_weight=".30"
+                   android:layout_height="wrap_content"
+                   android:text="Click on it to make payment of this member"
+                   android:textSize="10sp"
+                   android:fontFamily="sans-serif-light"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"/>
+
+
+           </TableRow>
+       </TableLayout>
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+</LinearLayout>

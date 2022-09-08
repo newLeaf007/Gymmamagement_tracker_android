@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    tools:context=".MemberActivity">
+
+
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_margin="20dp"
+          android:id="@+id/searchCard"
+          android:orientation="horizontal">
+          <soup.neumorphism.NeumorphCardView
+              style="@style/Widget.Neumorph.CardView"
+              android:layout_width="0dp"
+              android:layout_weight="0.7"
+              android:layout_height="80dp"
+              app:neumorph_shapeType="pressed">
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:background="@drawable/no_background"
+                  android:hint="Search the member for payment"
+                  android:id="@+id/search"
+                  />
+          </soup.neumorphism.NeumorphCardView>
+              <soup.neumorphism.NeumorphImageView
+                  android:id="@+id/searchIcon"
+                  android:layout_marginTop="10dp"
+                  app:neumorph_shapeType="pressed"
+                  android:layout_width="40dp"
+                  android:layout_height="40dp"
+                  android:src="@drawable/ic_baseline_person_search_24"
+                  />
+      </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleMember"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/searchCard"
+            android:layout_marginTop="20dp" />
+
+</RelativeLayout>

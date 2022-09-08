@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    tools:context=".MainActivity">
+
+
+
+    <soup.neumorphism.NeumorphImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Neumorph.ImageView"
+        android:src="@drawable/ic_baseline_directions_run_24"
+        app:neumorph_shapeType="basin"
+        android:layout_centerInParent="true"
+        android:transitionName="logo"
+        />
+    <soup.neumorphism.NeumorphTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Neumorph.TextView"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/logo"
+        android:textSize="45sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/text"
+        android:textStyle="bold"
+        android:transitionName="logoName"
+        android:id="@+id/logoName"
+        android:text="FITNESS SQUARE"/>
+
+</RelativeLayout>
